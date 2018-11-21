@@ -58,9 +58,9 @@ function removeFromCart(item) {
     if (!itemsInCart) {
       return `That item is not in your cart.`;
     } 
-    const valueToRemove = 'c'
-    const filteredItems = cart.filter(function(item) {
-    return item !== valueToRemove;
+    const valueToRemove = item;
+    const filteredItems = cart.filter(function(x) {
+    return x !== valueToRemove;
 } 
 }
 function placeOrder(cardNumber) {
