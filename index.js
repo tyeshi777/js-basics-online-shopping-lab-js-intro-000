@@ -63,6 +63,7 @@ function removeFromCart(item) {
     return x !== valueToRemove;
 } 
 }
+}
 function placeOrder(cardNumber) {
   // write your code here
   if (!cardNumber) {
@@ -75,4 +76,3 @@ function placeOrder(cardNumber) {
   }
   return cart;
   }
-}
