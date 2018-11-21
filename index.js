@@ -59,8 +59,8 @@ function removeFromCart(item) {
       return `That item is not in your cart.`;
     } else if (cart.hasOwnProperty(item)) {
       itemsInCart === true;
-     if (cart.indexOf(item)) {
-       cart.splice(item, 1);
+     if (cart.indexOf(item) === 0 || cart.indexOf(item) === 2 || cart.indexOf(item) === 3) {
+       cart.splice
      }
     }
     return cart;
