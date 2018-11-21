@@ -75,3 +75,4 @@ function placeOrder(cardNumber) {
   }
   return cart;
   }
+}
