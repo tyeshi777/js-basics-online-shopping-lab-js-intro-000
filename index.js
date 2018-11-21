@@ -57,15 +57,12 @@ function removeFromCart(item) {
   let itemsInCart = false;
     if (!itemsInCart) {
       return `That item is not in your cart.`;
-    } else if (cart.hasOwnProperty(item)) {
-      itemsInCart === true;
-     if (cart.indexOf(item) === 0 || cart.indexOf(item) === 2 || cart.indexOf(item) === 3) {
-       cart.splice
-     }
-    }
-    return cart;
+    } 
+    const valueToRemove = 'c'
+    const filteredItems = cart.filter(function(item) {
+    return item !== valueToRemove;
 } 
-
+}
 function placeOrder(cardNumber) {
   // write your code here
   if (!cardNumber) {
