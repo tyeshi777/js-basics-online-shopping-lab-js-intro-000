@@ -56,6 +56,10 @@ function removeFromCart(item) {
   // write your code here
     if (!item) {
       return `That item is not in your cart.`;
+    } else if (cart.hasOwnProperty(item)) {
+     if (cart.indexOf(item)) {
+       cart.splice(item, 1);
+     }
     }
 } 
 
